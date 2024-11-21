@@ -16,9 +16,9 @@ from langchain_community.chat_message_histories import ChatMessageHistory
 from langchain_ollama import ChatOllama
 
 
-os.environ['LANGCHAIN_API_KEY']=os.getenv('LANGCHAIN_API_KEY')
+os.environ['LANGCHAIN_API_KEY']=st.secrets('LANGCHAIN_API_KEY')
 os.environ['LANGCHAIN_TRACING_V2']='true'
-os.environ['HF_TOKEN']=os.getenv('HF_TOKEN')
+os.environ['HF_TOKEN']=st.secrets('HF_TOKEN')
 # GROQ_API_KEY=os.getenv('GROQ_API_KEY')
 
 
