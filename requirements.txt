@@ -10,3 +10,4 @@ python-dotenv
 pypdf
 duckduckgo-search
 langchain_ollama
+faiss-cpu
